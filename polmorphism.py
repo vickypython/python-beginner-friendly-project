@@ -16,3 +16,4 @@ c=People("victor","kyalo",24)
 v=People.from_full_name("mbithi torvic",24)
 c.greet()
 v.greet()
+

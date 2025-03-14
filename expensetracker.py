@@ -1,6 +1,7 @@
 import sqlite3
 #the first is to connect to db
 conn=sqlite3.connect('monthexpense.db')
+#cursor here seeems to be the model object
 cursor=conn.cursor()
 #first fn is the one to add expense
 cursor.execute('CREATE TABLE IF NOT EXISTS expense (id INTEGER PRIMARY KEY,name TEXT, amount REAL)')

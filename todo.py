@@ -1,5 +1,5 @@
-Todo app
-user can add,remove and mark todo ad completed
+# Todo app
+# user can add,remove and mark todo ad completed
 tasks=[]
 def show_task():
     print("here are the task")
