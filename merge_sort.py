@@ -10,6 +10,7 @@ def merge_sort(list):
     #conquer
     left=merge_sort(left_half)
     right=merge_sort(right_half)
+    #combine the sorted sublists into one list
     return merge(left,right)
 def split(list):
     """
@@ -37,3 +38,9 @@ def merge(left,right):
         else:
             l.append(right[i])
             j+=1
+    while i < len(left):
+        l.append(left[i])
+        i+=1
+    while j<len(right):
+        l.append(right[i])
+        j+=1
